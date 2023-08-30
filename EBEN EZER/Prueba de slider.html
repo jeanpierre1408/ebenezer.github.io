@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Prueba </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .content {
+      overflow: hidden;
+    }
+
+    #imagenes {
+      display: flex;
+      width: 300%;
+    }
+
+    #slide1:checked ~ .btn__desplazante > label:nth-child(1) {
+      background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;
+      float: right;
+      margin: 0 -50px 0 0;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slider">
+
+    <input type="radio" name="1" id="slide1" checked>
+    <input type="radio" name="1" id="slide2">
+    <input type="radio" name="1" id="slide3">
+
+    <div class="content">
+
+      <div id="imagenes">
+
+        <picture class="img1">
+
+          <img src="IMAGENES/Ilustracion de inicial.jpg" alt="">
+
+        </picture>
+
+        <picture class="img2">
+
+          <img src="IMAGENES/Ilustracion de primaria.jpg" alt="">
+
+        </picture>
+
+        <picture class="img3">
+
+          <img src="IMAGENES/Ilustracion de secundaria.jpg" alt="">
+
+        </picture>
+
+      </div>
+
+    </div>
+    
+    <div id="btn__desplazante">
+
+      <label for="slide1"></label>
+
+      <label for="slide2"></label>
+
+      <label for="slide3"></label>
+
+    </div>
+
+    <div class="btn__circle">
+
+      <label for="slide1"></label>
+
+      <label for="slide2"></label>
+
+      <label for="slide3"></label>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
